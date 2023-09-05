@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+	#main{
+		width: 60%;
+		margin: auto;
+		background-color: darkorchid;
+		padding: 20px;
+	}
+	
+	table{
+		box-sizing: border-box;
+		width: 70%;
+		margin: auto;
+		color: white;
+	}
+	
+	input[type=text], input[type=email], input[type=password], textarea{
+		box-sizing: border-box;
+		width: 100%;
+		border-radius: 0;
+		border: none;
+		padding: 5px;
+	}
+	
+	select{
+		border-radius: 0;
+	}
+	
+	td{
+		padding: 5px;
+		box-sizing: border-box;
+	}
+	
+	#reg{
+		width: 70%;
+		margin: auto;
+		padding: 10px;
+	}
+	
+	#reg button{
+		box-sizing: border-box;
+		border: none;
+		border-radius: 10px;
+		padding: 20px;
+		margin: auto;
+		width: 100%;
+	}
+</style>
+</head>
+
+<body bgcolor='mediumorchid'>
+	<h1>
+		<a href='./index.html'> Index Page </a>
+	</h1>
+	
+<div id='main'>
+<form>
+<table>
+	<tr>
+	<td> Name: </td>  <td> <input placeholder='your name' type='text'> </td>
+	</tr>
+	<tr>
+	<td> Email: </td>  <td> <input placeholder='your email' type='email'> </td>
+	</tr>
+	<tr>
+	<td> Password: </td>  <td> <input type='password'> </td>
+	</tr>
+	<tr>
+	<td> Phone Number: </td>  <td> <input type='text'> </td>
+	</tr>
+	<tr>
+	<td> Gender: </td>  
+	<td> 
+	Male:<input type='radio' name='gender'> 
+	Female:<input type='radio' name='gender'> 
+	Other:<input type='radio' name='gender'> 
+	</td>
+	</tr>
+	<tr>
+	<td> language </td>  
+	<td>
+	<select>
+	<option disabled selected hidden> Select language </option>
+	<option> English </option>
+	<option> Hindi </option>
+	<option> Tamil </option>
+	<option> Telugu </option>
+	</select>
+	</td>
+	</tr>
+	<tr>
+	<td> Zipcode: </td>  <td> <input type='text'> </td>
+	</tr>
+	<tr>
+	<td> About: </td>  <td> <textarea placeholder='write about yourself...'></textarea> </td>
+	</tr>
+</table>
+
+<div id='reg'>
+<button> Register </button>
+</div>
+</form>
+</div>
+</body>
+</html>

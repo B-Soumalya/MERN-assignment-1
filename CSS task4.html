@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<style>
+		#nav, #main{
+			float: left;
+		}
+		
+		#nav a{
+			display: block;
+			border-radius: 0 5px 5px 0;
+			padding: 10px 20px;
+			width: 50px;
+			color: white;
+			text-decoration: none;
+			position: absolute;
+			left: -70px;
+			transition: 0.5s;
+		}
+		#nav a:hover{
+			left: 0;
+		}
+		
+		.space{
+			padding: 24px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>
+		<a href='./index.html'> Index Page </a>
+	</h1>
+	
+	<div id='nav'>
+		<a style='background-color: seagreen' href='#green'> Green </a> <div class='space'></div>
+		<a style='background-color: dodgerblue' href='#blue'> Blue </a> <div class='space'></div>
+		<a style='background-color: firebrick' href='#red'> Red </a> <div class='space'></div>
+		<a style='background-color: dimgray' href='#black'> Black </a> <div class='space'></div>
+	</div>
+	
+	<div id='main' style='margin-left: 20px'>
+		<h2> Hoverable Sidenav Buttons </h2>
+		<p> Hover over the buttons in the left side navigation to open them. </p>
+	</div>
+</body>
+</html>

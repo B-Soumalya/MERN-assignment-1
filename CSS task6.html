@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+	#main{
+		margin: auto;
+		width: 50%;
+	}
+	
+	#photo{
+		display: block;
+		width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 20px;
+	}
+	
+	#field{
+		margin: auto;
+		font-weight: bold;
+		width: 80%;
+	}
+	
+	#field input{
+		display: block;
+		border-radius: 0 0 0 0;
+		box-sizing: border-box;
+		width: 100%;
+		margin: auto;
+		border: 2px solid lightgray;
+		padding: 10px;
+	}
+	
+	#field button{
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		border: none;
+		color: white;
+		background-color: mediumseagreen;
+		padding: 10px;
+		box-shadow: 0 7px gray;
+	}
+	
+	#rem{
+		box-sizing: border-box;
+		width: 80%;
+		margin: auto auto 20px auto;
+	}
+	
+	#other{
+		box-sizing: border-box;
+		width: 80%;
+		margin: auto;
+		background-color: lightgray;
+		padding: 20px;
+	}
+	
+	#other button{
+		padding: 10px;
+		background-color: firebrick;
+		color: white;
+		border-radius: 5px;
+		border: none;
+		box-shadow: 0 7px gray;
+	}
+	
+	#other a{
+		float: right;
+	}
+	
+	button:active{
+		box-shadow: 1 2px gray;
+		transform: translateY(5px);
+	}
+	
+</style>
+</head>
+
+<body>
+	<h1>
+		<a href='./index.html'> Index Page </a>
+	</h1>
+	
+<div id='main'>
+	<img src='./images/dp.jpg' id='photo'>
+
+	<div id='field' >
+	<form>
+	<label for='uname'> Username </label> <br>
+	<input name='uname' placeholder='Enter Username'> <br>
+	<label for='pass'> Password </label> <br>
+	<input type='password' name='pass' placeholder='Enter Password'> <br>
+	<button type='submit'> Login </button> <br>
+	</div>
+
+	<div id='rem'>
+	<input type='checkbox'> Remember me <br>
+	</div>
+	</form>
+
+	<div id='other'>
+		<button> Cancel </button>
+		<a href='#temp'> Forgot password? </a>
+	</div>
+</div>
+</body>
+</html>
